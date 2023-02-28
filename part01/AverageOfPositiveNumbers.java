@@ -10,30 +10,29 @@ public class AverageOfPositiveNumbers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int total = 0;
         int count = 0;
         double avg = 0;
-        int sum = 0;
         
-        while (true) {
-            // System.out.println("Give a number:");
-            int userNum = Integer.valueOf(scanner.nextLine());
+        while(true) {
+            //System.out.println("Give a number:");
+            int number = Integer.valueOf(scanner.nextLine());
             
-            if (userNum == 0) {
+            if (number == 0) {
                 break;
+            } else if (number > 0){
+                total += number;
+                count++;
+            } else {
+                continue;
             }
-            
-            count = count + 1;
-            sum = userNum + sum;
-            avg = (sum / (count * 1.0));
         }
         
-        if (avg == 0) {
+        avg = (total / (count * 1.0));
+        if (count == 0) {
             System.out.println("Cannot calculate the average");
-        } else if (avg < 0) {
-            System.out.println(avg * -1);
         } else {
             System.out.println(avg);
         }
-        scanner.close();
     }
 }
