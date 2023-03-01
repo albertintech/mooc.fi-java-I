@@ -17,6 +17,6 @@ public class SquareRootOfSum {
         userInt2 = Integer.valueOf(scanner.nextLine());
         squareRoot = Math.sqrt(userInt1 + userInt2);
         System.out.println(squareRoot);
-
+        scanner.close();
     }
 }

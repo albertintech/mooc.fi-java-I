@@ -24,5 +24,6 @@ public class SumOfNumbers {
             sum = userNum + sum;
         }
         System.out.println("Sum of the numbers: " + sum);
+        scanner.close();
     }
 }

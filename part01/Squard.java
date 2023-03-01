@@ -5,7 +5,7 @@ integer multiplied by itself.
 */
 import java.util.Scanner;
 
-public class Squared {
+public class Squard {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

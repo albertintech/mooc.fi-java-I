@@ -11,7 +11,6 @@ public class Factorial {
         
         System.out.println("Give a number: ");
         int userNum = Integer.valueOf(scanner.nextLine());
-        int total = 0;
         
         while (count <= userNum) {
             
@@ -19,5 +18,6 @@ public class Factorial {
             count++;
         }
         System.out.println("Factorial: " + factorial);
+        scanner.close();
     }
 }

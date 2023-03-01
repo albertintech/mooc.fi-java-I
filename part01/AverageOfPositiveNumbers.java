@@ -34,5 +34,6 @@ public class AverageOfPositiveNumbers {
         } else {
             System.out.println(avg);
         }
+        scanner.close();
     }
 }

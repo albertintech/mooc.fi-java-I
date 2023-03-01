@@ -28,6 +28,6 @@ public class NumberOfNegativeNumbers {
         }
 
         System.out.println("Number of negative numbers: " + count);
-
+        scanner.close();
     }
 }

@@ -28,6 +28,6 @@ public class NumberOfNumbers {
         }
 
         System.out.println("Number of numbers: " + count);
-
+        scanner.close();
     }
 }

@@ -3,6 +3,7 @@ Write a program, which reads an integer from the user. Then the program
 prints numbers from that number to 100. You can assume that the user
 always gives a number less than 100. 
 */
+
 import java.util.Scanner;
 
 public class CountingToHundred {
@@ -14,8 +15,13 @@ public class CountingToHundred {
         
         userInt = Integer.valueOf(scanner.nextLine());
         
-        for (int i = userInt; userInt <= end; userInt++) {
+        // for (int i = userInt; userInt <= end; userInt++) {
+        //     System.out.println(userInt);
+        // }
+
+        while (userInt <= end) {
             System.out.println(userInt);
+            userInt++;
         }
         
         scanner.close();

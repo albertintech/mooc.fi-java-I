@@ -27,6 +27,7 @@ public class NumberAndSumOfNumbers {
         }
         System.out.println("Number of numbers: " + count);
         System.out.println("Sum of the numbers: " + sum);
+        scanner.close();
     }
 }
 
