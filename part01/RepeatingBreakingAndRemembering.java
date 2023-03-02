@@ -16,6 +16,7 @@ public class RepeatingBreakingAndRemembering {
         int userNum = 0;
         int sum = 0;
         int count = -1;
+        double avg = 0;
         
         System.out.println("Give numbers:");
         
@@ -27,10 +28,11 @@ public class RepeatingBreakingAndRemembering {
             userNum = Integer.valueOf(scanner.nextLine());
         }
         
+        avg = sum/(count * 1.0);
         System.out.println("Thx! Bye!");
         System.out.println("Sum: " + sum);
         System.out.println("Numbers: " + count);
+        System.out.println("Average: " + avg);
         scanner.close();
     }
 }
-
