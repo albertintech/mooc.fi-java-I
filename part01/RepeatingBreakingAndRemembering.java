@@ -13,12 +13,17 @@ public class RepeatingBreakingAndRemembering {
         
         Scanner scanner = new Scanner(System.in);
         int userNum = 0;
+        int sum = 0;
         
         System.out.println("Give numbers:");
+        
         while (userNum != -1) {
+            sum = userNum + sum;
             userNum = Integer.valueOf(scanner.nextLine());
         }
+        
         System.out.println("Thx! Bye!");
+        System.out.println("Sum: " + sum);
         scanner.close();
     }
 }
