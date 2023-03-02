@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class RepeatingBreakingAndRemembering {
@@ -14,16 +15,22 @@ public class RepeatingBreakingAndRemembering {
         Scanner scanner = new Scanner(System.in);
         int userNum = 0;
         int sum = 0;
+        int count = -1;
         
         System.out.println("Give numbers:");
         
         while (userNum != -1) {
             sum = userNum + sum;
+            System.out.println(sum);
+            count++;
+            System.out.println(count);
             userNum = Integer.valueOf(scanner.nextLine());
         }
         
         System.out.println("Thx! Bye!");
         System.out.println("Sum: " + sum);
+        System.out.println("Numbers: " + count);
         scanner.close();
     }
 }
+
