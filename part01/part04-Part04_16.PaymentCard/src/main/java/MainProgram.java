@@ -2,10 +2,28 @@
 public class MainProgram {
 
     public static void main(String[] args) {
-        // Scanner scanner = new Scanner(System.in);
+        PaymentCard cardOfPaul = new PaymentCard(20);
+        PaymentCard cardOfMatt = new PaymentCard(30);
         
-        // Here you can write code to test that PaymentCard works as intended
-        // be sure to erase the extra code for the last part of the exercise!
-
+        cardOfPaul.eatHeartily();
+        cardOfMatt.eatAffordably();
+        
+        System.out.println("Paul: " + cardOfPaul);
+        System.out.println("Matt: " + cardOfMatt);
+        
+        cardOfPaul.addMoney(20.0);
+        cardOfMatt.eatHeartily();
+        
+        System.out.println("Paul: " + cardOfPaul);
+        System.out.println("Matt: " + cardOfMatt);
+        
+        cardOfPaul.eatAffordably();
+        cardOfPaul.eatAffordably();
+        
+        cardOfMatt.addMoney(50);
+        
+        System.out.println("Paul: " + cardOfPaul);
+        System.out.println("Matt: " + cardOfMatt);
     }
 }
+
