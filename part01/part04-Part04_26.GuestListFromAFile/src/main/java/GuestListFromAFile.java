@@ -6,18 +6,26 @@ import java.util.Scanner;
 public class GuestListFromAFile {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Name of the file:");
-        String file = scanner.nextLine();
+        String file = sc.nextLine();
 
         ArrayList<String> list = new ArrayList<>();
-        // implement reading the file here.
+        
+        try (Scanner scanner = new Scanner(Paths.get(file))) {
+            while (scanner.hasNextLine()) {
+                list.add(scanner.nextLine());
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        
         System.out.println("");
 
         System.out.println("Enter names, an empty line quits.");
         while (true) {
-            String name = scanner.nextLine();
+            String name = sc.nextLine();
             if (name.isEmpty()) {
                 break;
             }
